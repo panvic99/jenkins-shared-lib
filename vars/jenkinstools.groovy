@@ -3,8 +3,8 @@ def call(Map s){
         sh 'ls -ltr'
         sh 'pwd'
         sh 'ls -ltr'
-        echo 'path in lib : $s.paths'
-        dir('s.paths'){
+        echo 'path in lib : ${s.paths}'
+        dir(s.paths){
             sh 'mvn package' 
         }
         
