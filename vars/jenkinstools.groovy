@@ -4,6 +4,7 @@ def call(){
         dir('Jenkins/maven-samples/single-module'){
            sh 'mvn package' 
            //sh 'false'
+           sh 'ls -ltr'
         }
     }
 }
